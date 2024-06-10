@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .calculator {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+    .row{
+      padding: 5px;
+      border-radius: 25px;
+      
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="calculator border rounded p-3 shadow">
+      <input id="result" type="text" class="form-control mb-2" readonly>
+      <div class="row">
+        <div class="col-3"><button class="btn btn-warning btn-block"onclick="allClear()">C</button></div>
+        <div class="col-3"><button class="btn btn-warning btn-block"onclick="backSpace()">del</button></div>
+        <div class="col-3"><button class="btn btn-warning btn-block" onclick="displayData('%')">%</button></div>
+        <div class="col-3"><button class="btn btn-primary btn-block" onclick="displayData('/')">/</button></div>
+      </div>
+      <div class="row">
+        <div class="col-3"><button class="btn btn-secondary btn-block" onclick="displayData('7')">7</button></div>
+        <div class="col-3"><button class="btn btn-secondary btn-block" onclick="displayData('8')">8</button></div>
+        <div class="col-3"><button class="btn btn-secondary btn-block" onclick="displayData('9')">9</button></div>
+        <div class="col-3"><button class="btn btn-primary btn-block" onclick="displayData('-')">-</button></div>
+      </div>
+      <div class="row">
+        <div class="col-3"><button class="btn btn-secondary btn-block" onclick="displayData('4')">4</button></div>
+        <div class="col-3"><button class="btn btn-secondary btn-block" onclick="displayData('5')">5</button></div>
+        <div class="col-3"><button class="btn btn-secondary btn-block" onclick="displayData('6')">6</button></div>
+        <div class="col-3"><button class="btn btn-primary btn-block" onclick="displayData('*')">*</button></div>
+      </div>
+      <div class="row">
+        <div class="col-3"><button class="btn btn-secondary btn-block" onclick="displayData('1')">1</button></div>
+        <div class="col-3"><button class="btn btn-secondary btn-block" onclick="displayData('2')">2</button></div>
+        <div class="col-3"><button class="btn btn-secondary btn-block" onclick="displayData('3')">3</button></div>
+        <div class="col-3"><button class="btn btn-primary btn-block" onclick="displayData('+')">+</button></div>
+      </div>
+      <div class="row">
+        <div class="col-3"><button class="btn btn-secondary btn-block" onclick="displayData('0')">0</button></div>
+        <div class="col-3"><button class="btn btn-secondary btn-block"onclick="displayData('.')">.</button></div>
+        <div class="col-6"><button class="btn btn-success btn-block" type="submit"onclick="findOut()">=</button></div>
+      </div>
+    </div>
+  </div>
+ 
+</body><script src="./calci.js">
+
+</script>
+
+
+</html>
